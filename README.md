@@ -25,7 +25,7 @@ weiboAutoCommentTool.start({
   //每轮评论个数
   count: 3,
   //需要评论的微博post的id，默认是10月30日ctm的post
-  id: 4434013407876189,
+  id: 4433033908049230,
   //每轮评论间隔,默认为2分钟
   interval: 2*60*1000,
   //评论总轮数,默认为3轮
@@ -38,7 +38,7 @@ weiboAutoCommentTool.start({
 weiboAutoCommentTool.start({
   delay: 10*1000,
   count: 27,
-  id: 4434013407876189,
+  id: 433033908049230,
   interval: 10*60*1000,
   //评论总轮数,默认为3轮
   outCount: 30
