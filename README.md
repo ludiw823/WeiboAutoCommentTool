@@ -1,21 +1,32 @@
 # WeiboAutoCommentTool
 
 微博自动评论工具。
-*警告：谨慎使用，仅供学习，不要做违法乱纪的事情。*
+*给自家哥哥刷数据用。。。*
+
+## 说明
+自动评论某一条指定微博，评论内容从列表中随机选取。[原版本代码](https://github.com/mrhuo/WeiboAutoCommentTool)
 
 ## 使用方法
 
 * 登录微博
-* 切换到发现页面 [https://d.weibo.com](https://d.weibo.com)
+* 在feed流中找到你想要评论的微博，记录id(在<div>的mid attribute中)
 * F12打开浏览器控制台，把脚本内容全部复制粘贴到控制台，按回车
 * 然后执行以下代码：
 
 ```
+//注意每轮评论间隔必须 大于 每轮评论个数*评论时间间隔
 weiboAutoCommentTool.start({
-  //评论内容，不填默认当前时间
-  content: "哇，不错不错，很赞！"	,
-  //评论间隔时间，默认秒
-  delay: 10 * 1000 
+  //评论间隔时间，默认为10秒
+	delay: 10*1000,
+	//评论内容从列表中随机抽取
+  //每轮评论个数
+  count: 3,
+  //需要评论的微博post的id，默认是10月30日ctm的post
+  id: 4433033908049230,
+  //每轮评论间隔,默认为2分钟
+  interval: 2*60*1000,
+  //评论总轮数,默认为3轮
+  outCount: 3
 });
 ```
 ## 其他工具
@@ -25,57 +36,10 @@ weiboAutoCommentTool.stop()
 ```
 
 ```
-//查看评论统计
-weiboAutoCommentTool.stat()
+//查看评论统计待更新
 ```
-## 效果截图
-![效果图](screen-shot.jpg)
 
 ## 测试日志（下列记录来自控制台复制）
 ```
-weiboAutoCommentTool.start({
-    content: '哇，真不可思议~~'
-});
-
-2018-05-07 13:08:48: WeiboAutoCommentTool start running...
-2018-05-07 13:08:48: Use option: {"delay":10000,"content":"哇，真不可思议~~"}
-2018-05-07 13:08:48: WeiboAutoCommentTool running now.
-2018-05-07 13:08:48: Comment thread started.
------------------------------------------>
-2018-05-07 13:08:48: Commenting 4236962166085444
-2018-05-07 13:08:48: Comment list is not loaded, start loading...
-2018-05-07 13:08:48: Waiting comment list loading...
-2018-05-07 13:08:51: Sending comment content completed.
-<-----------------------------------------
------------------------------------------>
-2018-05-07 13:08:58: Commenting 4236975416123726
-2018-05-07 13:08:58: Comment list is not loaded, start loading...
-2018-05-07 13:08:58: Waiting comment list loading...
-2018-05-07 13:09:01: Sending comment content completed.
-<-----------------------------------------
------------------------------------------>
-2018-05-07 13:09:08: Commenting 4236986120511160
-2018-05-07 13:09:08: Comment list is not loaded, start loading...
-2018-05-07 13:09:08: Waiting comment list loading...
-2018-05-07 13:09:11: Sending comment content completed.
-<-----------------------------------------
-
-weiboAutoCommentTool.stat();
-2018-05-07 13:09:13: Comment queue: 
-["4236648663107765", "4236692271631492", "4236733615086129", "4236813700804304", "4236618468476778", "4236037263784663", "4235992158606659", "4236962166085444", "4236975416123726"]
-2018-05-07 13:09:13: Commented list: 
-["4236962166085444", "4236975416123726", "4236986120511160"]
-2018-05-07 13:09:13: STAT: Pending comment 9, Total commented 3
-
------------------------------------------>
-2018-05-07 13:09:18: Commenting 4236648663107765
-2018-05-07 13:09:18: Comment list is not loaded, start loading...
-2018-05-07 13:09:18: Waiting comment list loading...
-2018-05-07 13:09:21: Sending comment content completed.
-<-----------------------------------------
-
-weiboAutoCommentTool.stop();
-2018-05-07 13:09:21: User stoped
-2018-05-07 13:09:28: Comment action stoped, exit.
-2018-05-07 13:09:28: Comment thread action stoped, exit.
+//will update soon
 ```
