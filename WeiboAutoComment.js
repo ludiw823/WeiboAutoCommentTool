@@ -10,7 +10,7 @@ var weiboAutoCommentTool = (function(){
         //每轮评论个数
         count: 3,
         //需要评论的微博post的id，默认是10月30日ctm的post
-        id: 4433033908049230,
+        id: 4434013407876189,
         //每轮评论间隔,默认为2分钟
         interval: 2*60*1000,
         //评论总轮数,默认为3轮
@@ -144,5 +144,5 @@ var weiboAutoCommentTool = (function(){
 	// 	console.log(commentedIdList);
 	// 	logger("Total commented " + commentedIdList.length);
 	// };	
-	// return this;
+	return this;
 })();
