@@ -55,16 +55,12 @@ weiboAutoCommentTool.start({
   //评论总轮数,默认为3轮
   outCount: 8
 });
-
+```
 
 ## 其他工具
 ```
 //停止自动评论
 weiboAutoCommentTool.stop()
-```
-
-```
-//查看评论统计待更新
 ```
 
 ## 测试日志（下列记录来自控制台复制）
