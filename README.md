@@ -72,4 +72,4 @@ weiboAutoCommentTool.stop()
 
 ### 置顶微博 19-10-30 come to me 新歌宣传
 `4433033908049230`
-![](/PostScreenShot/191033.jpg)
+![](/PostScreenShot/191030.jpg)
