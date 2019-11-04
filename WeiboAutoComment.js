@@ -1,6 +1,6 @@
 var weiboAutoCommentTool = (function(){
 	//评论内容list
-	const contentList = ['#王晰个人巡回演唱会2019#','#王晰新歌#','#王晰王晰 come to me# wherever you maybe','#王晰谈婚姻中的安全感#','#王晰我们恋爱吧#','#王晰海藻头# [心]', '今天也是爱晰晰的一天[羞答答]','晰晰加油！[给你小心心]','#王晰摇滚小毛驴#'];
+	const contentList = ['#王晰个人巡回演唱会2019#','#王晰新歌#','#王晰 come to me# wherever you maybe','#王晰谈婚姻中的安全感#','#王晰我们恋爱吧#','#王晰海藻头# [心]', '今天也是爱晰晰的一天[羞答答]','晰晰加油！[给你小心心]','#王晰摇滚小毛驴#'];
 	var running = false;
 	var defaultOption = {
 		//评论间隔时间
