@@ -38,7 +38,8 @@ weiboAutoCommentTool.start({
 weiboAutoCommentTool.start({
   delay: 10*1000,
   count: 27,
-  id: 433033908049230,
+  //这里id是11-04上海演唱会九图
+  id: 4434918497237330,
   interval: 10*60*1000,
   //评论总轮数,默认为3轮
   outCount: 30
@@ -50,7 +51,8 @@ weiboAutoCommentTool.start({
 weiboAutoCommentTool.start({
   delay: 20*1000,
   count: 27,
-  id: 433033908049230,
+  //这里id是11-04上海演唱会九图
+  id: 4434918497237330,
   interval: 20*60*1000,
   //评论总轮数,默认为3轮
   outCount: 8
@@ -74,6 +76,11 @@ weiboAutoCommentTool.stop()
 `4433033908049230`
 
 ![](/PostScreenShot/191030.jpg)
+
+### 19-11-04 上海九图摇滚小毛驴
+`4434918497237330`
+
+![](/PostScreenShot/191104.png)
 
 ### 19-11-01 我们恋爱吧小作文
 `4433950325342593`
