@@ -38,8 +38,8 @@ weiboAutoCommentTool.start({
 weiboAutoCommentTool.start({
   delay: 10*1000,
   count: 27,
-  //这里id是11-04上海演唱会九图
-  id: 4434918497237330,
+  //这里id是11-05施耐德电气视屏
+  id: 4435192674584756,
   interval: 10*60*1000,
   //评论总轮数,默认为3轮
   outCount: 30
@@ -51,8 +51,8 @@ weiboAutoCommentTool.start({
 weiboAutoCommentTool.start({
   delay: 20*1000,
   count: 27,
-  //这里id是11-04上海演唱会九图
-  id: 4434918497237330,
+  //这里id是11-05施耐德电气视屏
+  id: 4435192674584756,
   interval: 20*60*1000,
   //评论总轮数,默认为3轮
   outCount: 8
@@ -76,6 +76,11 @@ weiboAutoCommentTool.stop()
 `4433033908049230`
 
 ![](/PostScreenShot/191030.jpg)
+
+### 19-11-05 施耐德电气 家是啥 视频
+`4435192674584756`
+
+![](/PostScreenShot/191105.png)
 
 ### 19-11-04 上海九图摇滚小毛驴
 `4434918497237330`
